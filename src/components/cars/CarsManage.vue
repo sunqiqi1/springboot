@@ -31,9 +31,9 @@
       </el-table-column>
       <el-table-column prop="name" label="车主姓名" width="180">
       </el-table-column>
-      <el-table-column prop="spot" label="停车场名称" width="180" formatter="formatSpot">
+      <el-table-column prop="spot" label="停车场名称" width="180" :formatter="formatSpot">
       </el-table-column>
-      <el-table-column prop="carstype" label="类型" width="180" formatter="formatCarstype">
+      <el-table-column prop="carstype" label="类型" width="180" :formatter="formatCarstype">
       </el-table-column>
       <el-table-column prop="number" label="车牌号" width="180">
       </el-table-column>
@@ -158,13 +158,13 @@ export default {
       let temp = this.spotData.find(item=>{
         return item.id==row.spot
       })
-      return item && temp.name
+      return temp && temp.name
     },
     formatCarstype(row){
       let temp = this.carstypeData.find(item=>{
         return item.id==row.carstype
       })
-      return item && temp.name
+      return temp && temp.name
     },
     resetForm() {
       this.$refs.form.resetFields();

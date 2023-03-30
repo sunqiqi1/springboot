@@ -3,7 +3,7 @@
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b"
-      style="height: 100%;"
+      style="height: 100%;text-align: left"
       default-active="/Home"
       :collapse="isCollapse"
       :collapse-transition="false"
