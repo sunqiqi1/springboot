@@ -1,25 +1,17 @@
 <template>
-  <div class="home">
-
-    <el-button type="success">{{msg}}</el-button>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="home">
+    <index></index>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import index from '@/components/index.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
-  },
-  data(){
-    return{
-      msg:"hello,呀"
-    }
+    index
   }
 }
 </script>
